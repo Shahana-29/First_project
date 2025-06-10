@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product and Invoice</title>
+  <style>
+    /*product styles*/
+  .product{
+    display: inline-block;
+    width: 25%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin: 10px;
+    box-sizing: border-box;/* include padding in width*/
+  }
+  .product img{
+    max-width: 100%;
+    height: auto;
+  }
+.product h3 {
+  margin: 5px 0;
+}
+/* Invoice Styles*/
+.invoice-tables{
+  width: 100%;
+  border-collapse:collapse ;
+  margin-top:20px ;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.invoice-tables th,.invoice-tables td{
+  border : 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.invoice-tables th{
+  background-color: #f2f2f2;
+}
+ </style>
+</head>
+<body>
+  <h1> Products</h1>
+  <div> class="product-list">
+    <div class="product-card">
+      <img src="c:\Users\sanke\OneDrive\Desktop\a37ccba9-3415-4279-9ef1-a3aa8bc5f36a_1.d7538d423a41f8501a74fa3505c7bdc6.webp" alt="Pens" height="300" width="300">
+      <h3>Pens</h3>
+      <p>Price:$10.00</p>
+    </div>
+    <div class="product-card">
+      <img src="c:\Users\sanke\OneDrive\Desktop\71ZR1BSOlTL._AC_SL1500_.jpg" alt="Sticky Notes" height="300" width="300">
+      <h3>Sticky Notes</h3>
+      <p>Price: $20.00</p>
+    </div>
+    <div class="product-card">
+      <img src="c:\Users\sanke\OneDrive\Desktop\s-l1600.jpg" alt="Highlighters" height="300" width="300">
+      <h3>Highlighters</h3>
+      <p>Price: $30.00</p>
+    </div>
+    <div class="product-card">
+      <img src="c:\Users\sanke\OneDrive\Desktop\e0484f73-457f-4322-ad17-9c7d218520b0_1.3ed8cba5c76df1cf82a1d4193b2bbfd9.webp" alt="Notebooks"height=300 width="300">
+      <h3>Notebooks</h3>
+      <p>Price: $40.00</p>
+    </div>
+  </div>
+  <h2>Invoice</h2>
+  <table class="invoice-tables">
+    <thead>
+      <tr>
+
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Total</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+        <td>Product 1</td>
+        <td>1</td>
+        <td>$10.00</td>
+        <td>$10.00</td>
+      </tr>
+      <tr>
+        <td>Product 2</td>
+        <td>1</td>
+        <td>$20.00</td>
+        <td>$20.00</td>
+      </tr>
+      <tr>
+        <td>Product 3</td>
+        <td>1</td>
+        <td>$30.00</td>
+        <td>$30.00</td>
+      </tr>
+      <tr>
+        <td>Product 4</td>
+        <td>1</td>
+        <td>$40.00</td>
+        <td>$40.00</td>
+      </tr>
+     </tbody>
+     <tfoot>
+      <tr>
+        <td colspan="3">Total</td>
+        <td>$100.00</td>
+      </tr>
+     </tfoot>
+
+</body>
+</html>
